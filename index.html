@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Portfolio</title>
+    
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.css">
+    
+    <!-- CDN
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.12.0/bootstrap-social.css">
+    -->
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="img/icon.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    
+    <!-- CDN
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    -->
+    
+    <script src="script.js"></script>
+</head>
+    
+<body>
+    
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">         
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a href="http://sigmagfx.com"><img src="img/sigmagfx-logo.png" id="title-logo"></a>
+                <a class="navbar-brand" href="http://sigmagfx.com">sigmagfx</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://sigmagfx.com/branding">Portfolio</a></li>
+                    <li><a href="https://sellfy.com/sigmagfx">Shop</a></li>
+                    <li><a href="http://sigmagfx.com/about/">About</a></li>
+                    <li><a href="http://sigmagfx.com/contact">Contact</a></li>
+                </ul>
+            </div>            
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <img src="img/site-logo.png" style="width:100px;">
+                <h1>Crypto Portfolio</h1>
+                <p>Cryptocoin portfolio value calculator.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    Get it from:<br/><br/>
+                    <a href="https://play.google.com/store/apps/details?id=com.ionicframework.crypto569321"><img src="img/googleplay.png" class="installer-button"></a>
+                    <!--<img src="img/appstore.png" class="installer-button">-->
+                </div>
+                <!--<div class="col-xs-12 text-center">
+                    or download the installer:<br/>
+                    <img src="img/download-apk.png" class="installer-button">
+                </div>-->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider1">
+          <div class="slide"><img src="img/screen.dash.png" alt="Crypto Portfolio Dashboard" /></div>
+          <div class="slide"><img src="img/screen.address.png" alt="Crypto Portfolio Address List" /></div>
+          <div class="slide"><img src="img/screen.detail.png" alt="Crypto Portfolio Address Details" /></div>
+          <div class="slide"><img src="img/screen.prices.png" alt="Crypto Portfolio Currency Prices" /></div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#acc1" role="button" aria-expanded="true">
+                                        What does this app do?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse in" id="acc1" aria-labelledby="acc1" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Crypto Portolio calculates the aggregate value and the structure of a portolio consisting a number of different cryptocurrency addresses, based on blockchain data and latest exchange rates.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc2" role="button" aria-expanded="false">
+                                        What price data is used?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc2" aria-labelledby="acc2" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Exchange rates in the current version are provided by <a href="http://coinmarketcap.com/">coinmarketcap.com</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc3" role="button" aria-expanded="false">
+                                        Which cryptocurrencies are supported?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc3" aria-labelledby="acc3" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Cryptocurrencies currently supported are:</p>
+                                    <p>Bitcoin, Dogecoin, Ethereum, Litecoin, Ethereum, Ripple, Counterparty, Dash, Peercoin, Reddcoin.</p>
+                                    <p>We are working to add all major cryptocurrencies to the portfolio. Check for app updates.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc4" role="button" aria-expanded="false">
+                                        How to add an address to my portfolio?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc4" aria-labelledby="acc4" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Go to Addresses tab then click on the Add button at the top of the address list. Complete the form with the address informations and then click the Add button at the bottom.</p>
+                                    <p>The easiest way to insert addresses is to copy them with a QR code scanner like <a href="https://play.google.com/store/apps/details?id=me.scan.android.client&hl=en">this one</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc5" role="button" aria-expanded="false">
+                                        How to delete an address from my portfolio?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc5" aria-labelledby="acc5" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Go to Addresses tab then click on the Delete button at the top of the address list. Delete buttons will appear on the left of every address entry in the list. Click the Delete button left to the address you want to delete.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc51" role="button" aria-expanded="false">
+                                        What are fixed items?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc51" aria-labelledby="acc51" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Fixed items meaning fixed value assets that are part of a portfolio. You can add them with a unique label and the value in USD at the Addresses tab.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc6" role="button" aria-expanded="false">
+                                        Can I add exchange platform wallets to my portfolio?</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc6" aria-labelledby="acc6" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Right now online exchange wallets are not supported by this app, but we are working to change this. However, it is recommended not to use an online exchange wallet to keep significant parts of your portfolio because of security vulnerabilities. The best way to use online exchange platforms is to use them only at exchange operations and then transfer all the resulting cryptocurrencies into your self-managed wallet or a trusted online wallet platform.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc7" role="button" aria-expanded="false">
+                                        The app working very slow.</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc7" aria-labelledby="acc7" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Please note that it may take up to 10 seconds to get all the balances of your addresses, especially if you have more than 3-4 addresses in your portfolio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h3 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#acc8" role="button" aria-expanded="false">
+                                        For further questions</a>
+                                </h3>
+                            </div>
+                            <div class="panel-collapse collapse" id="acc8" aria-labelledby="acc8" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>Send us a mail to sigmagfx50[at]gmail.com or use the <a href="http://sigmagfx.com/contact">contact form</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </main>
+    
+    <footer class="jumbotron" id="footer">
+        <div class="container">
+            <div class="row">       
+                <div class="col-xs-12 col-sm-6">
+                    <div class="footer-menu"><img src="img/sigmagfx-logo.png" id="footer-logo">
+                        <a href="http://sigmagfx.com/">sigmagfx</a> &bull; 
+                        <a href="http://sigmagfx.com/branding">Portfolio</a> &bull; 
+                        <a href="https://sellfy.com/sigmagfx">Shop</a> &bull; 
+                        <a href="http://sigmagfx.com/about/">About</a> &bull; 
+                        <a href="http://sigmagfx.com/contact">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="col-xs-11 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+                    <div class="nav navbar-nav">
+                        <a class="btn btn-social-icon btn-google" href="https://plus.google.com/112913484409634911668"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/sigmagfx"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/sigmagfx"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:sigmagfx50@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+    
+</html>

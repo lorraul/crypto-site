@@ -1,0 +1,22 @@
+{
+  "name": "crypto-ws",
+  "homepage": "https://github.com/lorraul/crypto-ws",
+  "authors": [
+    "lorraul <lorraul@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-social": "^5.1.1",
+    "bxslider-4": "http://github.com/stevenwanderski/bxslider-4.git#^4.2.12"
+  }
+}
